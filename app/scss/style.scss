@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Quintessential');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text|Poiret+One');
+$color-primary: #0E485E;
+$color-secondary: #EAE6E6;
+$color-punch: #383535;
+$white: #fff;
+$black: #000;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+// Header & Navbar (home page)
+header {
+  background: url("../img/foodheader-1.jpg");
+  background-size: cover;
+  height: 99vh;
+
+  & .nav {
+    background: rgba($color-primary, .8);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    & .logo {
+      font-size: 20px;
+      text-transform: uppercase;
+      font-family: 'Quintessential', cursive;
+      font-style: italic;
+      border: 1px solid $white;
+      padding: 5px 8px 5px 5px;
+    }
+  
+    & .logo, .nav_item {
+      text-decoration: none;
+      color: $white;
+    }
+  
+    & .nav_items {
+      list-style: none;
+      display: flex;
+
+      & .nav_item {
+        margin-left: 15px;
+        font-size: 17px;
+      }
+
+      & .menu_btn {
+        text-decoration: none;
+        color: $white;
+        font-size: 25px;
+      }
+    }
+  }
+  & .slogan_container {
+    text-align: center;
+    // padding-top: 200px;
+
+    & .slogan {
+      line-height: 2;
+      text-transform: uppercase;
+      margin-top: 200px;
+      display: flex;
+      justify-content: center;
+
+      & .slogan_title {
+        font-size: 70px;
+        font-family: 'Poiret One', cursive;
+        font-weight: bold;
+        letter-spacing: 10px;
+        font-style: italic;
+        color: $white;
+        background: rgba($color-primary, .7);
+        padding: 10px 20px;
+        border-radius: 3px;
+      }
+    }
+  }
+}
+
+// About Section
+.about {
+  padding: 100px 0;
+  display: flex;
+  justify-content: space-around;
+
+  & .img_1 {
+    border-radius: 3px;
+  }
+
+  & .about_container, .about_imges {
+    width: 43%;
+    line-height: 2;
+
+    & .about_title {
+      font-size: 25px; 
+      margin-bottom: 15px;
+      color: $color-primary;
+    }
+
+    & .about_paragraph {
+      font-size: 20px;
+    }
+  }
+}
+
+// Menu
+.menu_section {
+  padding: 100px 0;
+  text-align: center;
+  background: $color-secondary;
+
+  & .menu_title {
+    margin-bottom: 70px;
+    font-size: 40px;
+    color: $color-primary;
+    
+    & h1 {
+      font-family: 'Poiret One', cursive;
+      text-transform: uppercase;
+      letter-spacing: 10px;
+    }
+  }
+
+  & .menu_class {
+    text-decoration: none;
+    color: $black;
+    font-size: 25px;
+    margin: 0 50px;
+    padding: 10px;
+    border-radius: 3px;
+
+    &:hover {
+      background: $color-primary;
+      color: $white;
+    }
+  }
+}
+
+// Features Section
+.features {
+  text-align: center;
+  padding: 90px 90px;
+  background: $color-primary;
+  color: $white;
+
+  & .feature_title {
+    font-size: 40px;
+
+    & h1 {
+      font-family: 'Poiret One', cursive;
+      text-transform: uppercase;
+      letter-spacing: 8px;
+    }
+  }
+
+  & .feature {
+    margin-top: 50px;
+  }
+
+  & h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+
+  & p {
+    font-size: 20px;
+  }
+}
+
+// Private Dining
+.private_dining {
+  text-align: center;
+  padding: 90px 90px;
+
+  &  .private_dining--title {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Poiret One', cursive;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    margin-bottom: 20px;
+    color: $color-primary;
+  }
+
+  & .private_dining--sub {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  & .private_dining--p {
+    font-size: 20px;
+  }
+}
+
+// Private Area Section
+.lounge_description {
+
+  & h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: $color-primary;
+    text-transform: uppercase;
+  }
+
+  & p {
+    font-size: 20px;
+  }
+}
+
+// Reservation Component
+.reservation__header {
+  background: url("../img/reshead-img.jpg");
+  background-size: cover;
+  height: 99vh;
+}
+
+.form__section {
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 20px;
+  background: $color-secondary;
+  border-radius: 3px;
+
+  &--title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 25px;
+    color: $color-primary;
+  }
+
+  & .form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+    &--input {
+      margin-bottom: 20px;
+      padding: 10px;
+      border-radius: 3px;
+      border: 0;
+      font-size: 16px;
+      color: $color-primary;
+    }
+
+    &--button {
+      padding: 10px;
+      border: 0;
+      border-radius: 3px;
+      background: $color-primary;
+      color: $white;
+      font-size: 16px;
+      text-transform: uppercase;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+
+// Footer
+.footer {
+  padding: 70px 50px;
+  background: $color-punch;
+  color: $white;
+
+  & .contact_hours--title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  & .contact_hours--info {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  & .contact_info, .contact_hours {
+    line-height: 2;
+  }
+}
+
+// Secondary Footer
+.secondary_footer {
+  background: $color-primary;
+  color: $white;
+  display:flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 50px;
+
+  & a {
+    color: $white;
+    font-size: 30px;
+    margin-right: 15px;
+  }
+}
+
+// Tablet Size and lower
+@media only screen and (max-width: 800px) {
+  // Navigation and Header
+  header {
+    background: url("../img/foodheader-2.jpg");
+    background-size: cover;
+    height: 99vh;
+  }
+
+  .nav_item {
+    display: none;
+  }
+
+  // About Section
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & .about_container, .about_imges {
+      width: 70%;
+    }
+
+    & .img_1 {
+      width: 100%;
+      margin-top: 70px;
+    }
+  }
+
+  // Menu
+  .menu_classes {
+    display: flex;
+    flex-direction: column;
+    
+    & .menu_class {
+      margin-bottom: 50px;
+    }
+  }
+
+  // Private Areas 
+  .private_area--1, .private_area--2, .private_area--3 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: $color-secondary;
+  }
+  
+  .img {
+    width: 100%;
+    height: 400px;
+  }
+  
+  .lounge_description {
+    background: $color-secondary;
+    display:flex;
+    flex-direction: column;
+    padding: 70px 50px;
+  }
+
+  
+  
+
+  // Footer Section
+  .contact_hours--info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    & .contact_hours {
+      margin-top: 20px;
+    }
+  }
+
+  // Secondary Footer
+  .secondary_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & a {
+      font-size: 30px;
+    }
+  }
+
+}
+
+// Tablet size and higher
+@media only screen and (min-width: 799px) {
+  // Navigation
+  .nav_item {
+    display: block;
+    margin-top: 3px;
+  }
+
+  .menu_btn {
+    display: none;
+  }
+
+  // About Section
+  & .about_container, .about_imges {
+    width: 70%;
+  }
+
+  & .img_1 {
+    width: 100%;
+  }
+
+  // Private Areas
+  .private_area--1, .private_area--2, .private_area--3 {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    height: 400px;
+  }
+
+  .private_area--2 {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  
+  .img {
+    width: 100%;
+    height: 400px;
+  }
+  
+  .lounge_img, .lounge_description {
+    width: 60%;
+  }
+  
+  .lounge_description {
+    background: $color-secondary;
+    display:flex;
+    flex-direction: column;
+    padding: 0 50px;
+    justify-content: center;
+  }
+}
+  
+

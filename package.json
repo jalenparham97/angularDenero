@@ -1,0 +1,14 @@
+{
+  "name": "angulardenero",
+  "version": "1.0.0",
+  "description": "A Dining Website",
+  "main": "index.js",
+  "scripts": {
+    "compile:scss": "node-sass app/scss/style.scss app/css/style.css -w"
+  },
+  "author": "Jalen Parham",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.9.3"
+  }
+}

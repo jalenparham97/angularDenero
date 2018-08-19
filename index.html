@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="app/css/style.css">
+  <title>Welcome To Denero</title>
+</head>
+<body>
+   
+  <ng-view></ng-view>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="contact_hours--title">
+      <h1>Contact & Hours</h1>
+    </div>
+
+    <div class="contact_hours--info">
+      <div class="contact_info">
+        <p>1234 Jones Drive, Suite 102</p>
+        <P> Ann Arbor, MI 48105</P>
+        <p>Main: (734) 000-0000</p>
+        <p>Toll Free: (800) 123-1234</p>
+        <p>contact@denero.com</p> 
+      </div>
+
+      <div class="contact_hours">
+        <p>Monday - Friday 8:00am - 12:00am</p>
+        <p>Saturday 8:00am - 2:00am</p>
+        <p>Sunday 8:00am - 11:00pm</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Secondary Footer -->
+  <div class="secondary_footer">
+    <div class="media">
+      <a href="#"><i class="fab fa-facebook-square"></i></a>
+      <a href="#"><i class="fab fa-twitter-square"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <div class="copyright">
+      <p>
+       Denero &copy; 2018 All Rights Reserved
+      </p>
+    </div>
+  </div>
+
+
+
+
+  <script src="https://code.angularjs.org/1.6.5/angular.min.js"></script>
+  <script src="https://code.angularjs.org/1.6.5/angular-route.min.js"></script>
+  <script src="app/scripts/modules/app.js"></script>
+  <script src="app/scripts/components/home.js"></script>
+  <script src="app/scripts/components/menu.js"></script>
+  <script src="app/scripts/components/reservations.js"></script>
+  <script src="app/scripts/services/service.js"></script>
+  <script src="app/scripts/configs/config.js"></script>
+</body>
+</html>

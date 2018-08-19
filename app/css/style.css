@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Quintessential");
+@import url("https://fonts.googleapis.com/css?family=Crimson+Text|Poiret+One");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif; }
+
+header {
+  background: url("../img/foodheader-1.jpg");
+  background-size: cover;
+  height: 99vh; }
+  header .nav {
+    background: rgba(14, 72, 94, 0.8);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; }
+    header .nav .logo {
+      font-size: 20px;
+      text-transform: uppercase;
+      font-family: 'Quintessential', cursive;
+      font-style: italic;
+      border: 1px solid #fff;
+      padding: 5px 8px 5px 5px; }
+    header .nav .logo, header .nav .nav_item {
+      text-decoration: none;
+      color: #fff; }
+    header .nav .nav_items {
+      list-style: none;
+      display: flex; }
+      header .nav .nav_items .nav_item {
+        margin-left: 15px;
+        font-size: 17px; }
+      header .nav .nav_items .menu_btn {
+        text-decoration: none;
+        color: #fff;
+        font-size: 25px; }
+  header .slogan_container {
+    text-align: center; }
+    header .slogan_container .slogan {
+      line-height: 2;
+      text-transform: uppercase;
+      margin-top: 200px;
+      display: flex;
+      justify-content: center; }
+      header .slogan_container .slogan .slogan_title {
+        font-size: 70px;
+        font-family: 'Poiret One', cursive;
+        font-weight: bold;
+        letter-spacing: 10px;
+        font-style: italic;
+        color: #fff;
+        background: rgba(14, 72, 94, 0.7);
+        padding: 10px 20px;
+        border-radius: 3px; }
+
+.about {
+  padding: 100px 0;
+  display: flex;
+  justify-content: space-around; }
+  .about .img_1 {
+    border-radius: 3px; }
+  .about .about_container, .about .about_imges {
+    width: 43%;
+    line-height: 2; }
+    .about .about_container .about_title, .about .about_imges .about_title {
+      font-size: 25px;
+      margin-bottom: 15px;
+      color: #0E485E; }
+    .about .about_container .about_paragraph, .about .about_imges .about_paragraph {
+      font-size: 20px; }
+
+.menu_section {
+  padding: 100px 0;
+  text-align: center;
+  background: #EAE6E6; }
+  .menu_section .menu_title {
+    margin-bottom: 70px;
+    font-size: 40px;
+    color: #0E485E; }
+    .menu_section .menu_title h1 {
+      font-family: 'Poiret One', cursive;
+      text-transform: uppercase;
+      letter-spacing: 10px; }
+  .menu_section .menu_class {
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+    margin: 0 50px;
+    padding: 10px;
+    border-radius: 3px; }
+    .menu_section .menu_class:hover {
+      background: #0E485E;
+      color: #fff; }
+
+.features {
+  text-align: center;
+  padding: 90px 90px;
+  background: #0E485E;
+  color: #fff; }
+  .features .feature_title {
+    font-size: 40px; }
+    .features .feature_title h1 {
+      font-family: 'Poiret One', cursive;
+      text-transform: uppercase;
+      letter-spacing: 8px; }
+  .features .feature {
+    margin-top: 50px; }
+  .features h2 {
+    font-size: 25px;
+    margin-bottom: 15px; }
+  .features p {
+    font-size: 20px; }
+
+.private_dining {
+  text-align: center;
+  padding: 90px 90px; }
+  .private_dining .private_dining--title {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Poiret One', cursive;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    margin-bottom: 20px;
+    color: #0E485E; }
+  .private_dining .private_dining--sub {
+    font-size: 28px;
+    margin-bottom: 20px; }
+  .private_dining .private_dining--p {
+    font-size: 20px; }
+
+.lounge_description h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #0E485E;
+  text-transform: uppercase; }
+
+.lounge_description p {
+  font-size: 20px; }
+
+.reservation__header {
+  background: url("../img/reshead-img.jpg");
+  background-size: cover;
+  height: 99vh; }
+
+.form__section {
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 20px;
+  background: #EAE6E6;
+  border-radius: 3px; }
+  .form__section--title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 25px;
+    color: #0E485E; }
+  .form__section .form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto; }
+    .form__section .form--input {
+      margin-bottom: 20px;
+      padding: 10px;
+      border-radius: 3px;
+      border: 0;
+      font-size: 16px;
+      color: #0E485E; }
+    .form__section .form--button {
+      padding: 10px;
+      border: 0;
+      border-radius: 3px;
+      background: #0E485E;
+      color: #fff;
+      font-size: 16px;
+      text-transform: uppercase; }
+      .form__section .form--button:hover {
+        cursor: pointer; }
+
+.footer {
+  padding: 70px 50px;
+  background: #383535;
+  color: #fff; }
+  .footer .contact_hours--title {
+    text-align: center;
+    margin-bottom: 20px; }
+  .footer .contact_hours--info {
+    display: flex;
+    justify-content: space-around; }
+  .footer .contact_info, .footer .contact_hours {
+    line-height: 2; }
+
+.secondary_footer {
+  background: #0E485E;
+  color: #fff;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 50px; }
+  .secondary_footer a {
+    color: #fff;
+    font-size: 30px;
+    margin-right: 15px; }
+
+@media only screen and (max-width: 800px) {
+  header {
+    background: url("../img/foodheader-2.jpg");
+    background-size: cover;
+    height: 99vh; }
+  .nav_item {
+    display: none; }
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .about .about_container, .about .about_imges {
+      width: 70%; }
+    .about .img_1 {
+      width: 100%;
+      margin-top: 70px; }
+  .menu_classes {
+    display: flex;
+    flex-direction: column; }
+    .menu_classes .menu_class {
+      margin-bottom: 50px; }
+  .private_area--1, .private_area--2, .private_area--3 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: #EAE6E6; }
+  .img {
+    width: 100%;
+    height: 400px; }
+  .lounge_description {
+    background: #EAE6E6;
+    display: flex;
+    flex-direction: column;
+    padding: 70px 50px; }
+  .contact_hours--info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+    .contact_hours--info .contact_hours {
+      margin-top: 20px; }
+  .secondary_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .secondary_footer a {
+      font-size: 30px; } }
+
+@media only screen and (min-width: 799px) {
+  .nav_item {
+    display: block;
+    margin-top: 3px; }
+  .menu_btn {
+    display: none; }
+  .about_container, .about_imges {
+    width: 70%; }
+  .img_1 {
+    width: 100%; }
+  .private_area--1, .private_area--2, .private_area--3 {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    height: 400px; }
+  .private_area--2 {
+    display: flex;
+    flex-direction: row-reverse; }
+  .img {
+    width: 100%;
+    height: 400px; }
+  .lounge_img, .lounge_description {
+    width: 60%; }
+  .lounge_description {
+    background: #EAE6E6;
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+    justify-content: center; } }
