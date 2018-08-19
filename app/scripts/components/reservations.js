@@ -20,7 +20,7 @@ const reservations = {
 
     <div class="slogan_container">
       <div class="slogan">
-        <p class="slogan_title">denero</p>
+        <p class="slogan_title">Reservation</p>
       </div>
     </div>
 
@@ -30,18 +30,28 @@ const reservations = {
 
     <div class="form__section--title"><h1>Make Your Reservation</h1></div>
     <!-- Form Section -->
-    <form class="form">
+    <form class="form" ng-submit="$ctrl.setReservationInfo($ctrl.newReservation)">
 
-      <input type="text" class="form--input" placeholder="First Name">
-      <input type="text" class="form--input" placeholder="Last Name">
-      <input type="email" class="form--input" placeholder="Email">
-      <input type="text" class="form--input" placeholder="Company Name">
+      <input type="text" class="form--input" placeholder="First Name" ng-model="$ctrl.newReservation.firstName">
+      <input type="text" class="form--input" placeholder="Last Name" ng-model="$ctrl.newReservation.lastName">
+      <input type="email" class="form--input" placeholder="Email" ng-model="$ctrl.newReservation.email">
+      <input type="text" class="form--input" placeholder="Company Name" ng-model="$ctrl.newReservation.company">
+      <input type="number" class="form--input" placeholder="Party Size" ng-model="$ctrl.newReservation.party">
     
       <button class="form--button">Send</button>
 
     </form>
   </section>
-  `
+  `,
+
+  controller: ["ReservationService", "$location", function(ReservationService, $location) {
+    const vm = this;
+    
+    vm.setReservationInfo = (newReservation) => {
+      ReservationService.setReservation(newReservation);
+      $location.url("/confirm")
+    }
+  }]
 
   
 }

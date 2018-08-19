@@ -15,6 +15,11 @@ angular
         <menu></menu>
         `
     })
+    .when("/confirm", {
+        template: `
+        <confirmation></confirmation>
+        `
+    })
     .when("/home", {
         template: `
         <home></home>
