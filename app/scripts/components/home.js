@@ -3,7 +3,7 @@
 const home = {
   template: `
   <!-- Header and navigation -->
-  <header>
+  <header class="home">
     <nav class="nav">
       <div class="branding">
         <a href="#" class="logo">Denero</a>

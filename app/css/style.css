@@ -147,7 +147,7 @@ header {
   margin: 100px auto;
   padding: 20px;
   background: #EAE6E6;
-  border-radius: 3px; }
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75); }
   .form__section--title {
     text-align: center;
     margin-bottom: 50px;
@@ -174,6 +174,37 @@ header {
       text-transform: uppercase; }
       .form__section .form--button:hover {
         cursor: pointer; }
+
+.confirm {
+  max-width: 500px;
+  background: #EAE6E6;
+  margin: 100px auto;
+  padding: 40px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75); }
+  .confirm .confirmation {
+    font-size: 20px;
+    color: #0E485E;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #0E485E;
+    padding: 10px; }
+  .confirm--title {
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #0E485E; }
+  .confirm div button {
+    padding: 10px;
+    margin-right: 10px;
+    border: 0;
+    background: #0E485E;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 3px; }
+    .confirm div button:hover {
+      cursor: pointer; }
+  .confirm--message {
+    margin-top: 20px;
+    color: #0E485E; }
 
 .footer {
   padding: 70px 50px;

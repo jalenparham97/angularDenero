@@ -2,40 +2,20 @@
 
 const confirmation = {
   template: `
-    <header class="reservation__header">
-
-    <nav class="nav">
-      <div class="branding">
-        <a href="#" class="logo">Denero</a>
-      </div>
-
-      <ul class="nav_items">
-        <li><a href="#!/home" class="nav_item">Home</a></li>
-        <li><a href="#!/reservations" class="nav_item">Reservations</a></li>
-        <li><a href="#!/menu" class="nav_item">Menu</a></li>
-        <li><a href="#contact" class="nav_item btn">Contact</a></li>
-        <li><a href="#" class="menu_btn"><i class="fas fa-bars"></i></a></li>
-      </ul>
-    </nav>
-
-    <div class="slogan_container">
-      <div class="slogan">
-        <p class="slogan_title">Thank You</p>
-      </div>
-    </div>
-
-  </header>
 
   <section class="confirm">
 
-    <p>Name: {{ $ctrl.reservation.firstName }} {{ $ctrl.reservation.lastName }}</p>
-    <p>Email: {{ $ctrl.reservation.email }}</p>
-    <p>Company: {{ $ctrl.reservation.company }}</p>
-    <p>Party Size: {{ $ctrl.reservation.party }}</p>
+    <h3 class="confirm--title">thank you for your reservation</h3>
+
+    <p class="confirmation">Name: {{ $ctrl.reservation.firstName }} {{ $ctrl.reservation.lastName }}</p>
+    <p class="confirmation">Email: {{ $ctrl.reservation.email }}</p>
+    <p class="confirmation">Company: {{ $ctrl.reservation.company }}</p>
+    <p class="confirmation">Party Size: {{ $ctrl.reservation.party }}</p>
 
     <div>
-      <button class="confirm__buttton--confirm">Confirm Reservation</button>
-      <button class="confirm__buttton--edit">Edit Reservation</button>
+      <button ng-click="$ctrl.locationConfirm()">Confirm Reservation</button>
+      <button ng-click="$ctrl.locationReservation()">Edit Reservation</button>
+      <p class="confirm--message">When you confirm your reservation you will recieve a confirmation email.</p>
     </div>
     
   </section>
@@ -47,7 +27,8 @@ const confirmation = {
 
     vm.reservation = ReservationService.getReservation();
 
-    vm.location = () => $location.url("/reservations")
+    vm.locationReservation = () => $location.url("/reservations");
+    vm.locationConfirm = () => $location.url("/home");
   }]
 
   

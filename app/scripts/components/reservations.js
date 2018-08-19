@@ -49,7 +49,7 @@ const reservations = {
     
     vm.setReservationInfo = (newReservation) => {
       ReservationService.setReservation(newReservation);
-      $location.url("/confirm")
+      $location.url("/confirm");
     }
   }]
 
