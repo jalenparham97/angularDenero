@@ -34,7 +34,7 @@ const reservations = {
 
     <div class="slogan_container">
       <div class="slogan">
-        <p class="slogan_title">Reservation</p>
+        <p class="slogan_title">Reserve</p>
       </div>
     </div>
 
