@@ -14,7 +14,7 @@ const reservations = {
         <li><a href="#!/reservations" class="nav_item">Reservations</a></li>
         <li><a href="#!/menu" class="nav_item">Menu</a></li>
         <li><a href="#contact" class="nav_item btn">Contact</a></li>
-        <li><a href="#" class="menu_btn"><i class="fas fa-bars"></i></a></li>
+        <li><a href="#" class="menu_btn" id="menu_button"><i class="fas fa-bars"></i></a></li>
       </ul>
     </nav>
 
@@ -51,6 +51,7 @@ const reservations = {
       ReservationService.setReservation(newReservation);
       $location.url("/confirm");
     }
+    
   }]
 
   

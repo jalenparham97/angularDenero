@@ -303,6 +303,48 @@ header {
   }
 }
 
+//Menu Component 
+.menu__header {
+  background: url(../img/menuheader-1.jpg);
+  background-size: cover;
+}
+
+.menu {
+  width: 80%;
+  margin: 100px auto;
+  padding:  50px;
+  background: $color-secondary;
+  color: $color-primary;
+
+  & .menu__title--section {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Poiret One', cursive;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    font-size: 70px;
+  }
+
+  & .menu__section {
+    margin-bottom: 50px;  
+    padding: 20px;
+
+    & h4 {
+      margin-bottom: 20px;
+      font-size: 25px;
+    }
+
+    & ul {
+      list-style: none;
+      padding-bottom: 20px;
+      display: flex;
+      // flex-direction: row;
+      justify-content: space-between;
+      border-bottom: 1px solid $color-primary;
+    }
+  }
+}
+
 
 // Footer
 .footer {
@@ -424,6 +466,19 @@ header {
 
     & a {
       font-size: 30px;
+    }
+  }
+
+   //Menu 
+   .menu {
+      text-align: center;
+   }
+
+   .menu__section ul {
+      flex-direction: column;
+
+    & li {
+      margin-bottom: 10px;
     }
   }
 

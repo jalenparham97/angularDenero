@@ -206,6 +206,36 @@ header {
     margin-top: 20px;
     color: #0E485E; }
 
+.menu__header {
+  background: url(../img/menuheader-1.jpg);
+  background-size: cover; }
+
+.menu {
+  width: 80%;
+  margin: 100px auto;
+  padding: 50px;
+  background: #EAE6E6;
+  color: #0E485E; }
+  .menu .menu__title--section {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Poiret One', cursive;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    font-size: 70px; }
+  .menu .menu__section {
+    margin-bottom: 50px;
+    padding: 20px; }
+    .menu .menu__section h4 {
+      margin-bottom: 20px;
+      font-size: 25px; }
+    .menu .menu__section ul {
+      list-style: none;
+      padding-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #0E485E; }
+
 .footer {
   padding: 70px 50px;
   background: #383535;
@@ -278,7 +308,13 @@ header {
     flex-direction: column;
     align-items: center; }
     .secondary_footer a {
-      font-size: 30px; } }
+      font-size: 30px; }
+  .menu {
+    text-align: center; }
+  .menu__section ul {
+    flex-direction: column; }
+    .menu__section ul li {
+      margin-bottom: 10px; } }
 
 @media only screen and (min-width: 799px) {
   .nav_item {
