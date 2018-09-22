@@ -34,6 +34,19 @@ header {
         text-decoration: none;
         color: #fff;
         font-size: 25px; }
+    header .nav .nav_items--slide {
+      list-style: none;
+      display: flex; }
+      header .nav .nav_items--slide .nav_items--li {
+        margin-right: 50px; }
+      header .nav .nav_items--slide li {
+        margin-bottom: 10px; }
+      header .nav .nav_items--slide .nav_item--slide {
+        text-decoration: none;
+        color: #fff; }
+      header .nav .nav_items--slide .menu_btn-x {
+        text-decoration: none;
+        color: #fff; }
   header .slogan_container {
     text-align: center; }
     header .slogan_container .slogan {
@@ -269,6 +282,20 @@ header {
     height: 99vh; }
   .nav_item {
     display: none; }
+  .nav_items--slide {
+    list-style: none;
+    display: none;
+    background: rgba(14, 72, 94, 0.8);
+    padding: 20px; }
+    .nav_items--slide li {
+      margin-bottom: 10px; }
+    .nav_items--slide .nav_item--slide {
+      text-decoration: none;
+      color: #fff; }
+    .nav_items--slide .menu_btn-x {
+      text-decoration: none;
+      color: #fff;
+      font-size: 25px; }
   .about {
     display: flex;
     flex-direction: column;
@@ -320,6 +347,8 @@ header {
   .nav_item {
     display: block;
     margin-top: 3px; }
+  .nav--slide {
+    display: none; }
   .menu_btn {
     display: none; }
   .about_container, .about_imges {

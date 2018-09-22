@@ -53,6 +53,29 @@ header {
         font-size: 25px;
       }
     }
+
+    & .nav_items--slide {
+      list-style: none;
+      display: flex;
+
+      & .nav_items--li {
+        margin-right: 50px;
+      }
+
+      & li {
+        margin-bottom: 10px;
+      }
+
+      & .nav_item--slide {
+        text-decoration: none;
+        color: $white;
+      }
+
+      & .menu_btn-x {
+        text-decoration: none;
+        color: $white;
+      }
+    }
   }
   & .slogan_container {
     text-align: center;
@@ -338,7 +361,6 @@ header {
       list-style: none;
       padding-bottom: 20px;
       display: flex;
-      // flex-direction: row;
       justify-content: space-between;
       border-bottom: 1px solid $color-primary;
     }
@@ -397,6 +419,29 @@ header {
     display: none;
   }
 
+  .nav_items--slide {
+    list-style: none;
+    display: none;
+    background: rgba($color-primary, .8);
+    padding: 20px;
+
+    & li {
+      margin-bottom: 10px;
+    }
+
+    & .nav_item--slide {
+      text-decoration: none;
+      color: $white;
+    }
+
+    & .menu_btn-x {
+      text-decoration: none;
+      color: $white;
+      font-size: 25px;
+    }
+
+  }
+
   // About Section
   .about {
     display: flex;
@@ -443,9 +488,6 @@ header {
     padding: 70px 50px;
   }
 
-  
-  
-
   // Footer Section
   .contact_hours--info {
     display: flex;
@@ -490,6 +532,10 @@ header {
   .nav_item {
     display: block;
     margin-top: 3px;
+  }
+
+  .nav--slide {
+    display: none;
   }
 
   .menu_btn {

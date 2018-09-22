@@ -14,7 +14,21 @@ const menu = {
         <li><a href="#!/reservations" class="nav_item">Reservations</a></li>
         <li><a href="#!/menu" class="nav_item">Menu</a></li>
         <li><a href="#contact" class="nav_item btn">Contact</a></li>
-        <li><a href="#" class="menu_btn" id="menu_btn"><i class="fas fa-bars"></i></a></li>
+        <li><a href="" class="menu_btn" ng-click="$ctrl.slideMenu()"><i class="fas fa-bars"></i></a></li>
+      </ul>
+    </nav>
+
+    <nav class="nav--slide">
+      <ul class="nav_items--slide" id="nav_items--slide">
+        <div class="nav_items--li">
+          <li><a href="#!/home" class="nav_item--slide">Home</a></li>
+          <li><a href="#!/reservations" class="nav_item--slide">Reservations</a></li>
+          <li><a href="#!/menu" class="nav_item--slide">Menu</a></li>
+          <li><a href="#contact" class="nav_item--slide btn">Contact</a></li>
+        </div>
+        <div>
+          <a href="" class="menu_btn-x" ng-click="$ctrl.closeMenu()"><i class="fas fa-times"></i></a>
+        </div>
       </ul>
     </nav>
 
@@ -74,6 +88,14 @@ const menu = {
     </section>
   </main>
   `,
+
+  controller: function() {
+    const vm = this;
+    
+    vm.slideMenu = () => document.getElementById("nav_items--slide").style.display = "block";
+
+    vm.closeMenu = () => document.getElementById("nav_items--slide").style.display = "none";
+  }
 }
 
 angular
